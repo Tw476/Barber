@@ -3,76 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Breath-Taking's Cut</title>
+  <title>FreshCut Lagos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
       color: #fff;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
       text-align: center;
     }
-    header {
-      padding: 40px 20px;
-      background: #000;
-    }
-    h1 {
-      font-size: 2.5rem;
+
+    header h1 {
+      font-size: 3rem;
       margin-bottom: 10px;
     }
-    .section {
-      padding: 30px 20px;
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
-    .services {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 300px;
-      margin: auto;
-    }
-    .service {
-      background: #222;
-      padding: 15px;
-      border-radius: 10px;
-    }
+
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 15px 25px;
+      padding: 14px 28px;
       background: #25D366;
       color: #000;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 30px;
       font-weight: bold;
     }
-    footer {
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1a1a1a;
       padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #222;
+    }
+
+    footer {
       background: #000;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Breath-Taking's Cut</h1>
-  <p>Clean cuts, sharp style</p>
+  <h1>FreshCut Lagos</h1>
+  <p>Clean cuts. Sharp style.</p>
+  <a class="btn" href="https://wa.me/234XXXXXXXXXX">Book Appointment</a>
 </header>
 
 <section class="section">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="service">Haircut – ₦3,000</div>
-    <div class="service">Fade – ₦4,000</div>
-    <div class="service">Home Service – ₦8,000</div>
+    <div class="card">Haircut – ₦3,000</div>
+    <div class="card">Fade – ₦4,000</div>
+    <div class="card">Home Service – ₦8,000</div>
   </div>
+</section>
 
-  <a class="btn" href="https://wa.me/2348104486235">Book on WhatsApp</a>
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <p>Professional barbers, clean environment, and top-notch service that keeps you coming back.</p>
 </section>
 
 <footer>
   <p>📍 Lagos, Nigeria</p>
-  <p>© 2026 Breath-Taking's Cut</p>
+  <p>© 2026 FreshCut Lagos</p>
 </footer>
 
 </body>
